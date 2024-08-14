@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar_logo {
+    @apply text-2xl border-2 flex items-center justify-center p-3 rounded-md hover:bg-orange-300 duration-1000 cursor-pointer
+}
+.containers {
+    @apply px-[100px] 
+}
