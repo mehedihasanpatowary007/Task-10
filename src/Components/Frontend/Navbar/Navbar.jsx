@@ -12,18 +12,18 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-2 containers">
       <div className="flex items-center font-medium">
-        <div className="z-20 py-5 flex justify-between w-full">
+        <div className="z-20 py-5 flex justify-between w-full lg:w-[80px]">
           <div>
-            <img src={Logo} alt="logo" className="md:cursor-pointer w-[80px]" />
+            <img src={Logo} alt="logo" className="cursor-pointer w-[80px]" />
           </div>
           <div
-            className="text-3xl lg:hidden h-10 w-10"
+            className="text-3xl lg:hidden h-10 w-10 justify-end"
             onClick={() => setOpen(!open)}
           >
             <img src={`${open ? menuCross : menuOpen}`} alt="" />
           </div>
         </div>
-        <div className="lg:flex w-full ms-6 justify-between gap-4 hidden uppercase items-center">
+        <div className="lg:flex w-full ms-6 gap-4 justify-between hidden items-center">
           <div className="flex items-center gap-2 bg-[#2877ee] text-white rounded-md px-7 py-3">
             <span className="text-xl">
               <RxDashboard />
@@ -41,7 +41,7 @@ const Navbar = () => {
             <input
               className="outline-none rounded-e-lg ps-2 py-3 w-full"
               type="text"
-              placeholder="Search in the market"
+              placeholder="Search"
             />
             <span className="py-3 px-2 text-2xl text-white">
               <CiSearch />
