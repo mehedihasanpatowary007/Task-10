@@ -30,20 +30,19 @@ const Navbar = () => {
             </span>
             <button>Catalog</button>
           </div>
-          <div className="bg-[#2877ee] flex items-center p-[3px] rounded-md">
-            <select className="outline-none bg-white rounded-s-md px-2 py-[12.5px]">
+          <div className="bg-[#2877ee] flex items-center border-2 border-[#2877ee] rounded-md">
+            <select className="outline-none bg-white rounded-s-md px-2 py-[12.5px] border-e-2 border-gray-300">
               <option value="catagories">ALL CATAGORIES</option>
               <option value="catagories">Catagories</option>
               <option value="catagories">Catagories</option>
               <option value="catagories ">Catagories</option>
             </select>
-            <div className="py-2 px-2 text-2xl bg-white text-slate-500">|</div>
             <input
               className="outline-none rounded-e-lg ps-2 py-3 w-full"
               type="text"
               placeholder="Search"
             />
-            <span className="py-3 px-2 text-2xl text-white">
+            <span className="px-2 text-2xl text-white">
               <CiSearch />
             </span>
           </div>
