@@ -79,17 +79,17 @@ const Navbar = () => {
             <button>Catalog</button>
           </div>
 
-          <div className="bg-[#2877ee] flex items-center p-[3px] rounded-md">
-            <select className="outline-none bg-white rounded-s-md px-1 py-[12.5px]">
+          <div className="bg-[#2877ee] flex items-center border-2 border-[#2877ee] rounded-md">
+            <select className="outline-none bg-white rounded-s-md px-1 py-[12.5px] border-e-2 border-gray-400">
               <option value="catagories">ALL CATAGORIES</option>
               <option value="catagories">Catagories</option>
               <option value="catagories">Catagories</option>
               <option value="catagories ">Catagories</option>
             </select>
             <input
-              className="outline-none rounded-e-lg ps-1 py-3 w-full"
+              className="outline-none rounded-e-lg ps-3 py-3 w-full"
               type="text"
-              placeholder="Search in the market"
+              placeholder="Search"
             />
             <span className="py-3 px-1 text-2xl text-white">
               <CiSearch />
