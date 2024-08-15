@@ -46,7 +46,7 @@ const cards = [
 const Products = () => {
 
   return (
-    <div className="containers my-8">
+    <div className="containers my-8 z-30">
       <div className="flex justify-between">
         <h1 className="text-4xl font-semibold">Popular</h1>
         <button className="flex gap-2 items-center text-xl font-bold">

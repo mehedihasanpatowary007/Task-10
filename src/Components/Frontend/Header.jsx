@@ -9,8 +9,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="containers bg-[#252734] h-[50px] flex justify-between items-center px-8">
-        <div className=" flex items-center gap-14">
+      <div className="containers bg-[#252734] h-[50px] flex justify-between items-center">
+        <div className=" flex items-center mx-auto lg:mx-0 gap-4 lg:gap-14">
           <div>
             <ul className="flex text-sm font-semibold w-[175px] bg-gray-700 rounded-lg">
               <button
@@ -36,14 +36,9 @@ const Header = () => {
               </button>
             </ul>
           </div>
-          <div className="flex items-center gap-2 text-white">
-            <div>
-              <h3 className="text-white text-sm">
-                Select the delivery address
-              </h3>
-            </div>
+          <div className="flex items-center text-white">
             <select className="bg-gray-700 rounded-lg px-2 outline-none">
-              <option className="" value="">
+              <option value="">
                 Select
               </option>
               <option value="dhaka">Dhaka</option>
@@ -57,13 +52,13 @@ const Header = () => {
             </div>
           </div>
           <div>
-            <p className="text-slate-500 text-sm">
+            <p className="text-slate-500 lg:block hidden text-sm">
               Nearest delivery
               <span className="text-white"> today is 9:00 am - 5:00 pm</span>
             </p>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="lg:flex hidden justify-end">
           <h4 className="text-sm text-white">
             + 8801XXXXXXXXX
             <span className="text-slate-500 "> Around the clock</span>
