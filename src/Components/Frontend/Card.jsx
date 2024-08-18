@@ -1,18 +1,20 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { MdOutlineDone } from "react-icons/md";
 
 export default function Card({ card }) {
   const [favColour, setFavColour] = useState(false);
+  const [addCartDone, setAddCartDone] = useState(false);
+
   return (
-    <div className="relative bg-slate-100 p-5 flex flex-col justify-between min-h-[370px] min-w-1/3 rounded-md">
+    <div className="relative bg-slate-100 p-5 flex flex-col justify-between min-h-[370px] min-w-1/3 rounded-md hover:bg-orange-400 duration-1000 cursor">
       <div
         onClick={() => {
           setFavColour(!favColour);
         }}
         className="text-2xl absolute top-5 right-5 cursor-pointer"
       >
-        {/* <MdFavoriteBorder /> */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -32,15 +34,21 @@ export default function Card({ card }) {
         className="flex flex-col justify-center items-center w
           h-[70%]"
       >
-        <img className="w-[250px]" src={card?.image} alt="" />
+        <img
+          className="w-[250px] duration-1000 hover:scale-105"
+          src={card?.image}
+          alt=""
+        />
       </div>
       <div className="flex justify-between items-center mt-4">
         <span className="text-xl font-bold ">
           <h2>{card?.name}</h2>
           <h4>${card?.price}</h4>
         </span>
-        <span className="cursor-pointer inline-block text-xl border-2 border-black text-black rounded-[50%] p-1">
-          <FaPlus />
+        <span onClick={()=> {
+          setAddCartDone(!addCartDone);
+        }} className="cursor-pointer inline-block text-xl border-2 border-black text-black rounded-[50%] p-1">
+          {addCartDone ? <MdOutlineDone /> : <FaPlus />}
         </span>
       </div>
     </div>
